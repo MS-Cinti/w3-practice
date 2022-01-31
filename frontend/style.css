@@ -45,17 +45,19 @@
     height: 200px;
   } */
 
-body{
-  margin: auto;
-  width: 40%;
-  padding: 10%;
-}
 
 #cube1{
+  position: fixed;
+  right: 0;
+  bottom: 0;
   width: 400px;
   height: 400px;
   background-color: #ec275f;
 
+}
+
+div{
+  margin: auto;
 }
 
 #cube2{
@@ -89,6 +91,9 @@ body{
  }
 
  #cube7{
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 280px;
   height: 280px;
   background-color: #38340e;
