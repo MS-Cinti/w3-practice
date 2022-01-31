@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+
+  /** #root{
+    background-color: #45ff32;
+  }
+
+  div.container.wrapper{
+    background-color: #131517;
+
+  }
+
+  #root .container .container{
+    width: 200px;
+    height: 200px;
+  } */
+
+body{
+  margin: auto;
+  width: 40%;
+  padding: 10%;
+}
+
+#cube1{
+  width: 400px;
+  height: 400px;
+  background-color: #ec275f;
+
+}
+
+#cube2{
+  width: 380px;
+  height: 380px;
+  background-color: #f25477;
+}
+
+ #cube3{
+   width: 360px;
+   height: 360px;
+   background-color: #ffa7a6;
+ }
+
+ #cube4{
+   width: 340px;
+   height: 340px;
+   background-color: #ffdcdc;
+ }
+
+ #cube5{
+   width: 320px;
+   height: 320px;
+   background-color: #d4e0ee;
+ }
+
+ #cube6{
+   width: 300px;
+   height: 300px;
+   background-color: #8a090e;
+ }
+
+ #cube7{
+  width: 280px;
+  height: 280px;
+  background-color: #38340e;
+}
+
+#cube8{
+  width: 260px;
+  height: 260px;
+  background-color: #6d6131;
+}
+
+#cube9{
+  width: 240px;
+  height: 240px;
+  background-color: #e56703;
+}
+
+#cube10{
+  width: 220px;
+  height: 220px;
+  background-color: #ffa13d;
+}
+
