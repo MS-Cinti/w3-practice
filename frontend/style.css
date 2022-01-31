@@ -47,9 +47,9 @@
 
 
 #cube1{
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   width: 400px;
   height: 400px;
   background-color: #ec275f;
@@ -91,9 +91,9 @@ div{
  }
 
  #cube7{
-  position: fixed;
-  left: 0;
-  top: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   width: 280px;
   height: 280px;
   background-color: #38340e;
@@ -106,14 +106,33 @@ div{
 }
 
 #cube9{
+
   width: 240px;
   height: 240px;
   background-color: #e56703;
 }
 
 #cube10{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 220px;
   height: 220px;
   background-color: #ffa13d;
 }
 
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid #8a090e;
+}
+
+section button{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 200px;
+  height: 60px;
+  background-color: #8a090e;
+}
