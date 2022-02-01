@@ -32,3 +32,38 @@
   }
 /* end of CSS reset*/
 
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  background-color: beige;
+}
+
+button{
+  background-color: darkseagreen;
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
