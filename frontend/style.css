@@ -34,11 +34,11 @@
 
 section{
   height: 100vh;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   width: 100%; 
-  background-color: beige;
+  background-color: beige;*/
 }
 
 button{
@@ -73,16 +73,18 @@ section.image-holder img{
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 section.background-holder{
-  color: #ccc;
+  color: rgb(48, 45, 45);
   padding: 20px;
   border: 10px solid rgba(14, 199, 45, 0.5);
-  background-clip: border-box;
-  background-image: url("720.p.jpg");
-  background-size: 200px auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: black;
+  background-clip: border-box;                                /*ezzel tudjuk levágni az adott részt*/
+  background-image: url("./image/mike-smith-iiwrD3w8kkI-unsplash.jpg");    /*Google ezt nem látja*/
+  background-size: 200px 200px;                               /*cover-nem nyújtja el, elfedi a sectiont*/
+  background-position: center center;                                      /*középről indítja a képet*/
+  background-repeat: no-repeat;             /*ha nem akarjuk, hogy ismétlődjön, covernél is tegyük rá*/
+  background-color: rgb(197, 177, 177);
 }
