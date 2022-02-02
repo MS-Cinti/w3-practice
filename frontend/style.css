@@ -1,35 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
-  }
-  a{
-    text-decoration: none;
-  }
-  a img {
-    border: none;
-  }
-  
-  button,
-  a {
-    cursor: pointer;
-    color: inherit;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  button,
-  textarea,
-  select {
-    appearance: none !important;
-    border-radius: 0;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
 /* end of CSS reset*/
 
 section{
@@ -70,11 +70,12 @@ input{
 
 section.image-holder img{
   display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  position: absolute;
-  z-index: -1;
 }
 
 section.background-holder{
@@ -87,4 +88,24 @@ section.background-holder{
   background-position: center center;                                      /*középről indítja a képet*/
   background-repeat: no-repeat;             /*ha nem akarjuk, hogy ismétlődjön, covernél is tegyük rá*/
   background-color: rgb(197, 177, 177);
+}
+
+
+section.image-holder{
+  height: 100vh;
+  overflow: hidden; 
+}
+
+section.image-holder button{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  width: 200px;
+  height: 60px;
+  margin: 40px 0;
+  border-radius: 30px;
+  transform: translateX(-50%);
+  background-color: #09CED9;
+
 }
