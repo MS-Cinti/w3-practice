@@ -108,6 +108,10 @@ section.image-holder button{
   border-radius: 30px;
   transform: translateX(-50%);
   background-color:antiquewhite;
+  border: 3px solid rgb(65, 71, 71);
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: 20px;
 
 }
 
@@ -183,10 +187,47 @@ body{
 
 input{
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  max-width: 400px;
+  padding: 40px 0;
+  margin: 0 auto;
   display: inline-block;
   border: 3px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  
+}
+
+#contact input,
+#contact label{
+  display: block;
+  width: 100%;
+}
+
+#contact label{
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+#contact input{
+  height: 60px;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: white;
+  margin-bottom: 30px;
+
+}
+
+#contact button{
+  position: absolute;
+  transform: translate(0px, 220px);
+  width: 200px;
+  height: 60px;
+  margin: 40px 0;
+  border-radius: 30px;
+  background-color:antiquewhite;
+  border: 3px solid rgb(65, 71, 71);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: 20px;
 }
