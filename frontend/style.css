@@ -58,7 +58,7 @@ button{
   height: auto;
 }*/
 
-input{
+/*input{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -66,7 +66,7 @@ input{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
+}*/
 
 section.image-holder img{
   display: block;
@@ -76,19 +76,20 @@ section.image-holder img{
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  z-index: -1;
 }
 
-section.background-holder{
+/*section.background-holder{
   color: rgb(48, 45, 45);
   padding: 20px;
   border: 10px solid rgba(14, 199, 45, 0.5);
-  background-clip: border-box;                                /*ezzel tudjuk levágni az adott részt*/
-  background-image: url("./image/mike-smith-iiwrD3w8kkI-unsplash.jpg");    /*Google ezt nem látja*/
-  background-size: 200px 200px;                               /*cover-nem nyújtja el, elfedi a sectiont*/
-  background-position: center center;                                      /*középről indítja a képet*/
-  background-repeat: no-repeat;             /*ha nem akarjuk, hogy ismétlődjön, covernél is tegyük rá*/
+  background-clip: border-box;                                /*ezzel tudjuk levágni az adott részt
+  background-image: url("./image/mike-smith-iiwrD3w8kkI-unsplash.jpg");    /*Google ezt nem látja
+  background-size: 200px 200px;                               /*cover-nem nyújtja el, elfedi a sectiont
+  background-position: center center;                                      /*középről indítja a képet
+  background-repeat: no-repeat;             /*ha nem akarjuk, hogy ismétlődjön, covernél is tegyük rá
   background-color: rgb(197, 177, 177);
-}
+}*/
 
 
 section.image-holder{
@@ -106,6 +107,86 @@ section.image-holder button{
   margin: 40px 0;
   border-radius: 30px;
   transform: translateX(-50%);
-  background-color: #09CED9;
+  background-color:antiquewhite;
 
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font: 100px 'Montserrat';
+  font-weight: normal;
+  bottom: 0;
+  margin: 40px 0 0 40px;
+  color: antiquewhite;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+
+.background-holder{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(223, 219, 216);;
+}
+
+#About article{
+  width: 100%;
+  max-width: 400px;
+  padding: 80px 20px;
+  margin: 0px auto;
+  
+}
+
+#About h2{
+  padding: 20px;
+  bottom: 20px;
+}
+
+
+#services{
+  padding: 80px 0;
+  background-image: url("./image/mike-smith-iiwrD3w8kkI-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+#services ul{
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0px auto;
+  background-color: antiquewhite;
+  list-style: none;
+  background-color: rgba(100, 95, 95, 0.9);
+}
+
+#services ul li{
+  padding-bottom: 10px;
+}
+
+#services ul li h2,
+#services ul li p{
+  text-align: center;
+}
+
+
+#contact{
+  background-color: rgb(241, 232, 232);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
