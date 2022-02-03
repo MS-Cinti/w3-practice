@@ -18,3 +18,4 @@ console.log(0 === "0");
 console.log(0 === 0);
 console.log("0" === "0");
 console.log(addTwoIntegers (90, "90") );
+console.log("alma" === 6);
