@@ -1,21 +1,35 @@
-function addTwoIntegers(firstInteger, secondInteger) {
-    //console.log(firstInteger + secondInteger);
-    //return firstInteger + secondInteger                         //leállítja a műveletet vagy visszaküld
-    //return "hello"
-    if(typeof firstInteger === "number" && typeof secondInteger === "number"){
-        return firstInteger + secondInteger
-    } else{
-        return "valamelyik argumentum nem szám, ezért a művelet nem elvégezhető"
+function loadEvent(eventObject){
+    //console.log(eventObject);
+    const rootElement = document.getElementById("root");
+    //console.dir(document);
+    console.dir(rootElement);
+
+    const listOfSectionElements = document.querySelectorAll("section"); //a felsorolásba is belekerül a tszám miatt
+    console.log(listOfSectionElements);
+
+    //rootElement.classList.add("newClass");
+    /*listOfSectionElements[0].classList.add("newClass");  //0.elem a welcome, ezzel tudjuk kiválasztani
+    listOfSectionElements[1].classList.add("newClass");
+    listOfSectionElements[2].classList.add("newClass");
+    listOfSectionElements[3].classList.add("newClass");*/
+
+
+
+    let anchors = "";
+
+
+
+    for (const sectionElement of listOfSectionElements) {
+        //sectionElement.classList.add("newClass");
+      //anchors = anchors + `<a>${ sectionElement.id }</a>`  
+      anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.id } </a>`;
     }
-    
+
+
+    console.log(anchors);
+
+    rootElement.insertAdjacentHTML("afterbegin", `<header>${ anchors }</header>`)
 
 }
 
-console.log (addTwoIntegers(12, 13) );
-console.log (addTwoIntegers(1920, 85) );
-console.log (addTwoIntegers(13, "alma") );
-console.log(0 === "0");
-console.log(0 === 0);
-console.log("0" === "0");
-console.log(addTwoIntegers (90, "90") );
-console.log("alma" === 6);
+window.addEventListener("load", loadEvent);
