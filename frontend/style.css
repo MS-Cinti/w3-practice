@@ -32,209 +32,28 @@ select {
 }
 /* end of CSS reset*/
 
-section{
-  height: 100vh;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; 
-  background-color: beige;*/
+#root{
+  width: 100%;
+  min-height: 100vh;
 }
 
-button{
-  background-color: darkseagreen;
-  width: 240px;
-  height: 240px;
-  border-radius: 120px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding-bottom: 10px;
-}
-
-/*img{
-  width: 100%;
-  height: auto;
-}*/
-
-/*input{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}*/
-
-section.image-holder img{
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/*section.background-holder{
-  color: rgb(48, 45, 45);
+#root button{
   padding: 20px;
-  border: 10px solid rgba(14, 199, 45, 0.5);
-  background-clip: border-box;                                /*ezzel tudjuk levágni az adott részt
-  background-image: url("./image/mike-smith-iiwrD3w8kkI-unsplash.jpg");    /*Google ezt nem látja
-  background-size: 200px 200px;                               /*cover-nem nyújtja el, elfedi a sectiont
-  background-position: center center;                                      /*középről indítja a képet
-  background-repeat: no-repeat;             /*ha nem akarjuk, hogy ismétlődjön, covernél is tegyük rá
-  background-color: rgb(197, 177, 177);
-}*/
-
-
-section.image-holder{
-  height: 100vh;
-  overflow: hidden; 
-}
-
-section.image-holder button{
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 50%;
-  width: 200px;
-  height: 60px;
-  margin: 40px 0;
-  border-radius: 30px;
-  transform: translateX(-50%);
-  background-color:antiquewhite;
-  border: 3px solid rgb(65, 71, 71);
-  text-align: center;
-  justify-content: center;
-  letter-spacing: 0.3em;
-  font-size: 20px;
-
-}
-
-h1{
-  font-family: 'Montserrat', sans-serif;
-  font: 100px 'Montserrat';
-  font-weight: normal;
-  bottom: 0;
-  margin: 40px 0 0 40px;
-  color:darkslategrey;
-}
-
-body{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  margin: 20px;
+  background-color: brown;
 }
 
 
-.background-holder{
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(223, 219, 216);;
-}
+/*           1. módszer:
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate (-50%, -50%)
 
-#About article{
-  width: 100%;
-  max-width: 400px;
-  padding: 80px 20px;
-  margin: 0px auto;
-  line-height: 1.6;
-  font-size: 20px;
-  
-}
+              2. módszer:    ezt akkor jó használni, ha tudjuk a pontos méreteket
 
-#About h2{
-  padding: 20px;
-  bottom: 20px;
-  text-align: center;
-}
-
-
-#services{
-  padding: 80px 0;
-  background-image: url("./image/mike-smith-iiwrD3w8kkI-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  
-}
-
-#services ul{
-  width: 100%;
-  max-width: 800px;
-  padding: 20px;
-  margin: 0px auto;
-  background-color: antiquewhite;
-  list-style: none;
-  background-color: rgba(100, 95, 95, 0.9);
-}
-
-#services ul li{
-  padding-bottom: 10px;
-}
-
-#services ul li h2,
-#services ul li p{
-  text-align: center;
-}
-
-#services ul li p{
-  line-height: 1.6;
-}
-
-
-#contact{
-  background-color: rgb(241, 232, 232);
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-input{
-  width: 100%;
-  max-width: 400px;
-  padding: 40px 0;
-  margin: 0 auto;
-  display: inline-block;
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  
-}
-
-#contact input,
-#contact label{
-  display: block;
-  width: 100%;
-}
-
-#contact label{
-  font-size: 12px;
-  padding-bottom: 10px;
-}
-
-#contact input{
-  height: 60px;
-  padding: 0 10px;
-  font-size: 18px;
-  background-color: white;
-  margin-bottom: 30px;
-
-}
-
-#contact button{
-  position: absolute;
-  transform: translate(0px, 220px);
-  width: 200px;
-  height: 60px;
-  margin: 40px 0;
-  border-radius: 30px;
-  background-color:antiquewhite;
-  border: 3px solid rgb(65, 71, 71);
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  font-size: 20px;
-}
+position: absolute;
+top: calc(50% - 50px);
+left: calc(50% - 50px);
+width: 300px;
+height: 100px;
