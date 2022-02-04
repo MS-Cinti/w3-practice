@@ -22,7 +22,12 @@ function loadEvent(eventObject){
     for (const sectionElement of listOfSectionElements) {
         //sectionElement.classList.add("newClass");
       //anchors = anchors + `<a>${ sectionElement.id }</a>`  
-      anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.id } </a>`;
+      if (sectionElement.getAttribute("data-show") === "1"){
+
+        anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.getAttribute("data-title") } </a>`;
+
+      }
+
     }
 
 
