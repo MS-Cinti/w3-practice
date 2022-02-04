@@ -19,3 +19,13 @@ console.log(0 === 0);
 console.log("0" === "0");
 console.log(addTwoIntegers (90, "90") );
 console.log("alma" === 6);
+
+
+function returnParam(parameter) {
+  //console.log(parameter)
+  return `<h1>${parameter}</h1>` 
+
+}
+
+//returnParam(1990);
+console.log( returnParam("helo") )
