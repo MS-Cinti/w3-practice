@@ -1,29 +1,29 @@
-//EREDETI funtion loadEvent:
-//function loadEvent(eventObject){
+/*EREDETI funtion loadEvent:
+function loadEvent(eventObject){
 
-    //const rootElement = document.getElementById("root");
+    const rootElement = document.getElementById("root");
   
-    //console.dir(rootElement);
+    console.dir(rootElement);
   
-    //const listOfSectionElements = document.querySelectorAll("section");
-    //console.log(listOfSectionElements);
-  
-  
-    //let anchors = "";
+    const listOfSectionElements = document.querySelectorAll("section");
+    console.log(listOfSectionElements);
   
   
-    //for (const sectionElement of listOfSectionElements) {
+    let anchors = "";
+  
+  
+    for (const sectionElement of listOfSectionElements) {
         //console.log(sectionElement.id);
         //anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.id } </a>`;
-    //}
+    }
   
-    //console.log(anchors);
+    console.log(anchors);
   
-    //rootElement.insertAdjacentHTML("afterbegin", `<header><nav>${ anchors }</nav></header>`);
+    rootElement.insertAdjacentHTML("afterbegin", `<header><nav>${ anchors }</nav></header>`);
     
- //}
+}
   
-  //window.addEventListener("load", loadEvent);
+window.addEventListener("load", loadEvent);*/
 
 
 
