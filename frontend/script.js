@@ -19,3 +19,17 @@ console.log(0 === 0);
 console.log("0" === "0");
 console.log(addTwoIntegers (90, "90") );
 console.log("alma" === 6);
+
+
+
+function aboutMe(){                       //kiírja a választott object kulcsát
+
+  let dataAboutMe = {
+      name: "Cintia",
+      age: "26"
+  }
+
+  return dataAboutMe.name;
+}
+
+alert(aboutMe());
