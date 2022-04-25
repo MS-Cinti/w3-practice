@@ -35,7 +35,7 @@ function loadEvent(eventObject){
     console.dir(rootElement);
 
     const listOfSectionElements = document.querySelectorAll("section"); //a felsorolásba is belekerül a tszám miatt
-    console.log(listOfSectionElements);
+    console.log(listOfSectionElements); //ez egy nodeList- objektum
 
     //rootElement.classList.add("newClass");
     /*listOfSectionElements[0].classList.add("newClass");  //0.elem a welcome, ezzel tudjuk kiválasztani
@@ -49,16 +49,29 @@ function loadEvent(eventObject){
 
 
 
-    for (const sectionElement of listOfSectionElements) {
+    /* for (const sectionElement of listOfSectionElements) {
         //sectionElement.classList.add("newClass");
       //anchors = anchors + `<a>${ sectionElement.id }</a>`  
       if (sectionElement.getAttribute("data-show") === "1"){
-
         anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.getAttribute("data-title") } </a>`;
-
       }
 
-    }
+    } */
+
+    //map() for loop helyett:
+    //ha queryselectorAll-al van megfogva a dolog, akkor a map-et így lehet végig tolni rajta:
+    Array.from(document.querySelectorAll("section")).map(sectionElement => {
+        if (sectionElement.getAttribute("data-show") === "1"){
+            return anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.getAttribute("data-title") } </a>`;
+        }
+
+    })
+
+    /* listOfSectionElements.map(sectionElement => {
+        if (sectionElement.getAttribute("data-show") === "1"){
+            anchors += `<a href="#${ sectionElement.id }"> ${ sectionElement.getAttribute("data-title") } </a>`;
+        }
+    }) */
 
 
     console.log(anchors);
